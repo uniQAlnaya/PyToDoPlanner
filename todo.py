@@ -26,12 +26,6 @@ if len(sys.argv) == 1: # показать незавершенные задач�
                 print(str(n) + ": " + task)
 
 else:
-    # if sys.argv[1] == 'add': #добавить задачу
-    #     head.head()
-    #     if len(sys.argv) == 3:
-    #         add.add_task('todo.txt', sys.argv[2])
-    #     elif len(sys.argv) == 4:
-    #         add.add_task_due('todo.txt', sys.argv[2], sys.argv[3])
 
     if sys.argv[1] == 'add': #добавить задачу
         head.head()
@@ -39,7 +33,6 @@ else:
             add.add_task_due('todo.txt', sys.argv[2: -1], sys.argv[-1])
         else:
             add.add_task('todo.txt', sys.argv[2:])
-
 
     elif sys.argv[1] == 'remove': #удалить задачу
         remove.remove('todo.txt', sys.argv[2])
@@ -60,11 +53,9 @@ else:
         head.head()
         done.done('todo.txt', sys.argv[2])
 
-
     elif sys.argv[1] == 'undo': #отменить завершение задачи
         head.head()
         undo.undo('todo.txt', sys.argv[2])
-
 
     elif sys.argv[1] == 'search': #поиск задач по тексту
         head.head()

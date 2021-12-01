@@ -1,5 +1,3 @@
-
-
 def edit(file, num, words):
     with open('todo.txt', 'r') as f:
         n = int(num) - 1

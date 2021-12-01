@@ -15,4 +15,3 @@ def undo(file, num):
             with open(file, 'a') as f:
                 for task in text:
                     f.write(task)
-
